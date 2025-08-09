@@ -1,62 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portifólio Emmanuelle Souza</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header>
-    <div class="logo">Portfólio MS</div>
-    <div class="menu" onclick="Menu()">clique aqui</div>
-    <nav>
-      <ul>
-        <li><a href="#">Sobre mim</a></li>
-        <li><a href="#">Projetos</a></a></li>
-        <li><a href="#">Frameworks</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul> <!-- o elemento ul cria listas de indices-->
-    </nav>
-    <h1>Sejam bem vindo(a) ao meu Portifólio.</h1>
-    <button onclick="meuTema()"></button>
-  </header>
 
-<main>
-  <section id="Sobre Mim">
-    <h2>Sobre mim</h2>
-    <p>eu sou desenvolvedora front end...</p>
-  </section>
+    <header>
+        <div class="container">
+            <h1>Portifolio</h1>
+        </div>
+    </header>
 
-  <section id="Projetos" >
-    <h2>Meus Projetos</h2>
-    <p>Em breve verá por aqui meus projetos como desenvolvedora Web</p>
-  </section>
+    <main class="container">
+        <section id="hero">
+            <div class="hero-text">
+                <h2>Emmanuelle Souza</h2>
+                <p>"Bem-vindo ao meu espaço criativo. Aqui, você descobre minhas habilidades e vê como posso transformar suas ideias em experiências únicas na web."
+                    </p>
+            </div>
+            <div class="hero-image">
+                <img src="./imagem/fotologo.jpg" alt="Ilustração abstrata de código" data-ai-hint="abstract code">
+            </div>
+        </section>
 
-  <section id="Ferramentas">
-    <h2>Frameworks</h2>
-    <div class="item-carrossel">
-    <img src="./style.css" alt="logo css">
-    <p>CSS é uma estilização para documentos web.</p>
-    </div>
-    <img src="./image/logo javascript.png" alt="logo javascript"> <p>javascript é uma linguagem de programação.</p>
-    <img src="./image/logoHtml.jpg" alt="logo html"> <p>HTML é uma marcação de texto para Web.</p>
+       <!-- <section id="portfolio">
+            <h2>Meus Trabalhos Criativos</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="HTML">HTML</button>
+                <button class="filter-btn" data-filter="CSS">CSS</button>
+                <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Os projetos serão inseridos aqui pelo JavaScript 
+            </div>
+        </section>-->
 
-      <button onclick="voltar()">◀</button>
-      <button onclick="avancar()">▶</button>
-    </div>
-  
-  </section>
-</main>
+        <section id="tech-stack">
+            <h2>Meu Kit de Ferramentas Digitais</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_128.png" alt="HTML5 Logo" class="tech-logo">
+                    <h3>HTML</h3>
+                    <p>HTML é a linguagem que define a estrutura de páginas web, organizando textos, imagens, links e outros elementos para que os navegadores possam interpretar e exibir o conteúdo corretamente.
+                        .</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png" alt="CSS3 Logo" class="tech-logo">
+                    <h3>CSS</h3>
+                    <p>CSS é a linguagem que define o estilo e o layout de páginas web, controlando cores, fontes e espaçamentos.
+                        </p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/240px-JavaScript-logo.png" alt="JavaScript Logo" class="tech-logo">
+                    <h3>JavaScript</h3>
+                    <p>JavaScript é a linguagem de programação que torna páginas web interativas, permitindo criar animações, validar formulários e manipular elementos em tempo real.
+                        .</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Portfolio Emmanuelle Souza. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
-<script src="./script.js">
-
-</script>
-<footer>
-<p>&copy; 2025 - Portfólio by Emmanuelle Souza</p>
-<a href="https://github.com/Manu2220" target="_blank" rel="noopener noreferrer">github</a>
-</footer>
 </html>
